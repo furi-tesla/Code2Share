@@ -20,22 +20,22 @@ public class Name {
     public String randomFirst() {
         String first = "";
 
-        String[] femNames = {"Allison", "Bethany", "Carol",
+        String[] femNames = {"Allison", "Anastasia", "Belle", "Bethany", "Carol",
                 "Denise", "Elle", "Fiona", "Gabriella", "Hazel",
-                "Ivy", "Jennifer", "Katherine", "Lily", "Madison",
+                "Ivy", "Jennifer", "Jolene", "Katherine", "Lily", "Madison",
                 "Nancy", "Ophelia", "Persephone", "Queen", "Rachel",
                 "Stephanie", "Tammy", "Ursula", "Vivian", "Wilma",
                 "Xandra", "Yasmin", "Zoya"};
 
-        String[] mascNames = {"Arthur", "Bob", "Clint",
+        String[] mascNames = {"Arthur", "Andrew", "Bob", "Brandon", "Clint",
                 "David", "Edgar", "Forrest", "Gene", "Hector",
-                "Isaac", "Jacob", "Kobe", "Liam", "Matthew",
+                "Isaac", "Jacob", "James", "Kobe", "Liam", "Matthew",
                 "Nathan", "Oscar", "Patrick", "Quentin", "Robert",
                 "Stephen", "Tim", "Usman", "Victor", "Walder",
                 "Xavier", "Yusuf", "Zachariah"};
 
-        String[] nbNames = {"Alex", "Blair", "Cameron",
-                "Dylan", "Evan", "Frankie", "Grayson", "Hayden",
+        String[] nbNames = {"Alex", "Awe", "Blake",  "Blair", "Cameron",
+                "Dylan", "Evan", "Erin", "Frankie", "Grayson", "Hayden",
                 "Indigo", "Jo", "Kai", "Logan", "Morgan",
                 "Noel", "Oakley", "Paris", "Quinn", "Robin",
                 "Sage", "Tatum", "Urban", "Valentine", "Winter",
@@ -59,7 +59,7 @@ public class Name {
 
     public  String randomLast() {
         String name = "";
-        String[] lastName = {"Amon", "Baker", "Cunningham",
+        String[] lastName = {"Amon", "Andrews", "Bond", "Baker", "Cunningham",
                 "Dubois", "Easton", "Finch", "Grant", "Houser",
                 "Iman", "Jacobs", "Kane", "Land", "Moon",
                 "Nader", "Opal", "Peterson", "Quiet", "Rohan",
@@ -104,10 +104,14 @@ public class Name {
         this.gender = gender;
     }
 
-    @Override
-    public String toString() {
+    public String spelledOut() {
         return "The name of your new character is: " +
                 first + " " + middle + " " +
                 last;
+    }
+
+    @Override
+    public String toString() {
+        return first + " " + middle + " " + last;
     }
 }
